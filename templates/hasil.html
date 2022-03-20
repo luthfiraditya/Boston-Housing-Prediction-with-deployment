@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>linear regression</title>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="/" method="GET">
+            
+            <span class="contact100-form-title">
+                <h2>{{ prediction_text }}</h2>
+            </span>
+
+            <div class="container-contact100-from-btn">
+                <div class="wrap_contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        <span>
+                            SELESAI
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

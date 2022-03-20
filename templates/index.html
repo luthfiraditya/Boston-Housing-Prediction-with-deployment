@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>linear regression</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact-form validate-form" action="/" method="POST">
+            <span class="contact100-form-title">Boston House Price Prediction</span>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">Jumlah Kamar</span>
+                <input class="input100" type="text" placeholder="masukan jumlah kamar" name="RM" id="RM" required>
+                <span class="focus-input100"></span>
+            </div>
+                
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">Nilai persentase penduduk berstatus lebih rendah(dalam persen)</span>
+                <input class="input100" type="text" placeholder="(0-50%)" name="LSTAT" id="LSTAT" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">proporsi bisnis non-retail per kota dalam hektar</span>
+                <input class="input100" type="text" placeholder="(0-40)" name="INDUS" id="INDUS" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">Rasio murid-guru per kota</span>
+                <input class="input100" type="text" placeholder="(0-40)" name="PTRATIO" id="PTRATIO" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">Tarif pajak properti nilai penuh per USD 10.000 per kota</span>
+                <input class="input100" type="text" placeholder="(50-1000)" name="TAX" id="TAX" required> 
+                <span class="focus-input100"></span> 
+            </div>
+            
+            <div class="container-contact100-from-btn">
+                <div class="wrap_contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        <span>
+                            Prediksi Harga Rumah
+                            <i class="fa fa-long-arrow-right m-1-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+
+            
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+</div>
+
+{% endblock %}
